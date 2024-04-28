@@ -1,0 +1,384 @@
+/* /Components/CustomInputText.razor.rz.scp.css */
+.default-input[b-zawxnb9x8i] {
+    border: none !important;
+    border-radius: 2px !important;
+    outline-width: 2px !important;
+    outline-color: lightgray !important;
+    outline-style: solid !important;
+}
+
+.good-input[b-zawxnb9x8i] {
+    outline-color: yellowgreen !important;
+    color: seagreen;
+}
+
+.warnning-input[b-zawxnb9x8i] {
+    outline-color: orange !important;
+    color: saddlebrown;
+}
+
+.danger-input[b-zawxnb9x8i] {
+    outline-color: red !important;
+    color: darkred;
+}
+
+i[b-zawxnb9x8i] {
+    margin-left: 5px;
+}
+
+.wrapper[b-zawxnb9x8i] {
+    background: #fff;
+    padding: 1px;
+    width: var(--component-width, 300px);
+    border-radius: 5px;
+    height: 30px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px;
+}
+
+.new-wrapper[b-zawxnb9x8i] {
+    display: flex;
+    align-items: center; /* To align items vertically in the center */
+}
+
+    .new-wrapper > span[b-zawxnb9x8i] {
+        margin-right: 10px; /* Adjust as needed */
+    }
+
+
+ input[b-zawxnb9x8i] {
+    height: 100%;
+    width: 100%;
+    padding: 0 4px 0 45px;
+    transition: all 0.1s ease;
+}
+
+ input[b-zawxnb9x8i]::selection {
+    color: #fff;
+    background: #58cff1;
+}
+
+ input:focus[b-zawxnb9x8i],
+ input:valid[b-zawxnb9x8i] {
+/*    border-color: #58cff1;
+*/}
+
+ input[b-zawxnb9x8i]::placeholder {
+    /*color: #c4c4c4;*/
+}
+
+ .counter[b-zawxnb9x8i] {
+    position: absolute;
+    left: 2px;
+    width: 42px;
+    font-size: 11px;
+    color: #c4c4c4;
+    text-align: center;
+    padding-right: 0px;
+    border-right: 1px solid #d8d8d8;
+    pointer-events: none;
+}
+
+ input:valid ~ .counter[b-zawxnb9x8i] {
+    color: black;
+    border-color: gray;
+}
+/* /Components/StageBottleBreak.razor.rz.scp.css */
+.scrollable-table-body[b-knvigvm62c] {
+    display: block;
+    max-height: 450px; /* Adjust based on the height needed to show 10 rows */
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+table[b-knvigvm62c] {
+    width: 100%;
+}
+
+.input-group[b-knvigvm62c] {
+    display: flex;
+    align-items: center;
+}
+
+.input-group-append[b-knvigvm62c] {
+    margin-left: 0.5rem; /* Adjust as needed for spacing */
+}
+
+.input-group-text[b-knvigvm62c] {
+    background-color: transparent; /* or any color that fits your design */
+    border: none; /* Adjust or remove as per your design */
+    color: #495057; /* Match the color with your design */
+    padding-left: 0.5rem; /* Spacing inside the span */
+    padding-right: 0.5rem; /* Spacing inside the span */
+}
+
+.mb-3[b-knvigvm62c] {
+    display: flex; /* This will put the input and counter side by side */
+    align-items: center; /* This will vertically center them */
+    gap: 0.5rem; /* This provides some space between the input and the counter */
+}
+
+    .mb-3 .form-control[b-knvigvm62c] {
+        flex-grow: 1; /* This will make the input take up the available space */
+    }
+
+    .mb-3 span[b-knvigvm62c] {
+        white-space: nowrap; /* This prevents the counter from wrapping */
+    }
+
+.text-good[b-knvigvm62c] {
+    color: green;
+}
+
+.text-warning[b-knvigvm62c] {
+    color: orange;
+}
+
+.text-danger[b-knvigvm62c] {
+    color: red;
+}
+
+.text-muted[b-knvigvm62c] {
+    color: #6c757d; /* Default color, change as needed */
+}
+input#question[b-knvigvm62c]::placeholder {
+    color: #ced4da !important; /* Use !important to override other styles if necessary */
+    font-size: 0.875rem !important; /* Use !important to override other styles if necessary */
+}
+/* /Components/StageDefault.razor.rz.scp.css */
+/* /Components/Tooltip.razor.rz.scp.css */
+.tooltip-wrapper[b-k0m8lztz3x] {
+    position: relative;
+    display: inline-block;
+    border-bottom: 0px dotted black;
+    cursor: pointer;
+}
+
+#spanText[b-k0m8lztz3x] {
+    visibility: hidden;
+    position: fixed;
+    width: 250px;
+    /*    bottom: 1%;
+    left: 50%;*/
+    margin-left: -60px;
+    background-color: #363636;
+    color: #fff;
+    font: bold 14px arimo;
+    text-align: center;
+    padding: 10px 8px;
+    border-radius: 6px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+    #spanText[b-k0m8lztz3x]::after {
+        content: " ";
+        position: relative;
+        bottom: 100%; /* At the top of the tooltip */
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent transparent black transparent;
+        opacity: 0;
+        transition: opacity 1s;
+    }
+
+.tooltip-wrapper:hover #spanText[b-k0m8lztz3x] {
+    visibility: visible;
+    transition: opacity 0.3s;
+    opacity: 1;
+}
+/* /Pages/GameEdit.razor.rz.scp.css */
+.container-fluid[b-wxopwbj3qw] {
+    border-radius: 5px;
+    box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+    margin-bottom: 10px;
+}
+
+.main-content[b-wxopwbj3qw] {
+    border-radius: 5px;
+    background-color: #fff; /* Optional: depends on your design preference */
+    padding: 10px; /* Provide some spacing inside the content area */
+}
+
+.sidebar-panel[b-wxopwbj3qw] {
+    background-color: #f8f9fa;
+    border-radius: 5px;
+}
+
+.sidebar-button[b-wxopwbj3qw] {
+    margin: 5px;
+    background: linear-gradient(to bottom right, #3A4148, #212529); /* Dark gradient background */
+}
+
+
+.enterExitText[b-wxopwbj3qw] {
+    padding: 10px;
+    color: #ccc;
+    text-shadow: 0 0 8px #ffffff; /* White glow for emphasis on text */
+}
+
+/* Sidebar Styles */
+.sidebar[b-wxopwbj3qw] {
+    border-radius: 5px;
+    background: linear-gradient(to bottom right, #3A4148 , #212529); /* Dark gradient background */
+}
+
+.sidebar-heading[b-wxopwbj3qw] {
+/*    padding: 18px;
+*/    /*text shadow*/
+    text-shadow: 0 0 12px black; /* White glow for emphasis on text */
+}
+
+/* Improved Button Styles */
+.sidebar-button[b-wxopwbj3qw] {
+    margin: 5px;
+    background-color: #6c757d;
+    border: none;
+    color: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Soft shadow for neumorphism */
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth transition for interaction */
+}
+
+.sidebar-button:hover[b-wxopwbj3qw], .sidebar-button:focus[b-wxopwbj3qw] {
+     transform: translateY(-2px);
+     box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.3); /* Elevated shadow on hover */
+}
+
+/* Glowing effects for icons and key texts */
+.fa-gamepad[b-wxopwbj3qw] {
+    color: #17a2b8; /* Bright color for icons */
+    text-shadow: 0 0 2px #00c4ff; /* Blue glow around icon */
+    font-size: 20px;
+    padding: 20px;
+}
+
+.btn-success[b-wxopwbj3qw] {
+    background-image: linear-gradient(to right, #23913B, #218838); /* Gradient for success button */
+    border: 1px solid #27A141;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.9); /* Elevated shadow on hover rgba(0, 0, 0, 0.2) */
+}
+
+/* Overall text and link enhancements for better readability and effect */
+a.text-white[b-wxopwbj3qw] {
+    text-decoration: none;
+    opacity: 0.9; /* Slightly dim links for focus on interaction */
+}
+
+a.text-white:hover[b-wxopwbj3qw] {
+    opacity: 1; /* Brighten on hover for interactivity */
+}
+
+/*on narrow sized screens no box shadow to conatiner-fluid*/
+@media (max-width: 768px) {
+    .container-fluid[b-wxopwbj3qw] {
+        box-shadow: none;
+    }
+}
+/* /Pages/Index.razor.rz.scp.css */
+h1[b-6wy4igjwk6] {
+    font-size: 50px;
+    font-weight: 600;
+    background-image: linear-gradient(to left, black, lightgray);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+
+/* /Shared/MainLayout.razor.rz.scp.css */
+html[b-82v0u5v5pd], body[b-82v0u5v5pd] {
+    height: 100%;
+    margin: 0;
+}
+
+#app[b-82v0u5v5pd] {
+    height: 100%;
+}
+
+.page[b-82v0u5v5pd] {
+    min-height: 100vh; /* This ensures that the .page takes up at least the height of the viewport */
+    display: flex;
+    flex-direction: column;
+}
+
+main[b-82v0u5v5pd] {
+    flex: 1; /* This allows the main content to expand and fill the available space */
+}
+
+footer[b-82v0u5v5pd] {
+    flex-shrink: 0; /* This ensures that the footer does not shrink */
+}
+
+
+
+
+/* /Shared/NavMenu.razor.rz.scp.css */
+.navbar-toggler[b-n0ky1ih9la] {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.top-row[b-n0ky1ih9la] {
+    height: 3.5rem;
+    background-color: rgba(0,0,3,0.4);
+}
+
+.navbar-brand[b-n0ky1ih9la] {
+    font-size: 1.1rem;
+}
+
+.oi[b-n0ky1ih9la] {
+    width: 2rem;
+    font-size: 1.1rem;
+    vertical-align: text-top;
+    top: -2px;
+}
+
+.nav-item[b-n0ky1ih9la] {
+    font-size: 0.9rem;
+    padding-bottom: 0.5rem;
+}
+
+    .nav-item:first-of-type[b-n0ky1ih9la] {
+        padding-top: 1rem;
+    }
+
+    .nav-item:last-of-type[b-n0ky1ih9la] {
+        padding-bottom: 1rem;
+    }
+
+    .nav-item[b-n0ky1ih9la]  a {
+        color: #d7d7d7;
+        border-radius: 4px;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        line-height: 3rem;
+    }
+
+.nav-item[b-n0ky1ih9la]  a.active {
+    background-color: rgba(255,255,255,0.25);
+    color: white;
+}
+
+.nav-item[b-n0ky1ih9la]  a:hover {
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+}
+
+@media (min-width: 641px) {
+    .navbar-toggler[b-n0ky1ih9la] {
+        display: none;
+    }
+
+    .collapse[b-n0ky1ih9la] {
+        /* Never collapse the sidebar for wide screens */
+        display: block;
+    }
+}
+
